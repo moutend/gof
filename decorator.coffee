@@ -19,9 +19,10 @@ class CarDecorator
   getPrice: () ->
     @car.getPrice()
 
-class CarAudioDecorator
+class CarAudioDecorator extends CarDecorator
   constructor: (car) ->
-    CarDecorator.call this, car
+    #CarDecorator.call this, car
+    super car
   this: new CarDecorator()
   drive: () ->
     puts 'driving with nice music'
