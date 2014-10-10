@@ -1,3 +1,7 @@
+# decorator
+# http://www.adobe.com/jp/devnet/html5/articles/javascript-design-patterns-pt2-adapter-decorator-factory.html#
+#
+
 puts = (msg) -> console.log msg
 
 class Car
